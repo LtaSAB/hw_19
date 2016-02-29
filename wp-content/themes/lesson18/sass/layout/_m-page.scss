@@ -125,9 +125,17 @@
         text-transform: none;
         color: white;
         margin-bottom: 30px;
+        display: inline-block;
 
         a {
           color: white;
+        }
+      }
+      .crafty-social-buttons {
+        float: right;
+        margin: 30px 0 25px;
+        img {
+          border-radius: 50%;
         }
       }
     }
@@ -145,6 +153,29 @@
     }
     .quick-links {
       padding: 60px 15px 60px 15px ;
+      #menu-quicklinks {
+        display: block !important;
+        li {
+          a {
+            color: $footer-font-color;
+            line-height: 24px;
+            &:hover {
+              color: $link_hover-color;
+              &:before {
+                color: $link_hover-color;
+              }
+            }
+          }
+          &:before {
+            content: '\f054';
+            font-family: FontAwesome,sans-serif;
+            font-size: (9/16)*1rem;
+            padding-right: 10px;
+            vertical-align: middle;
+          }
+        }
+
+      }
     }
     .news-letter {
       padding: 60px 10px 60px 15px ;

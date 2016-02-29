@@ -12,6 +12,7 @@
 	<header class="h-page">
 		<div class="container-fluid">
 			<h1 class="logotype "><a href="<?php echo home_url('/portfolio', 'http'); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+			<?php do_action('crafty-social-link-buttons'); ?>
 			<button class="hamburger">&#9776;</button>
 			<button class="cross">&#735;</button>
 				<?php

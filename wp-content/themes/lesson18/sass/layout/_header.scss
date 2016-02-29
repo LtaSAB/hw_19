@@ -1,8 +1,15 @@
 .h-page {
   position: relative;
   h1 {
-    width: 200px;
+    display: inline-block;
     margin: 25px 0;
+  }
+  .crafty-social-buttons {
+    float: right;
+    margin: 30px 50px 25px 0;
+    img {
+      border-radius: 50%;
+    }
   }
   .hamburger, .cross {
     position:absolute;

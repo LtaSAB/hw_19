@@ -76,6 +76,7 @@
 		<div class="our-contacts clearfix">
 			<div class="our-describe col-xs-12 col-sm-8 col-md-6 col-lg-4 ">
 				<h2 class="logotype"><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h2>
+				<?php do_action('crafty-social-link-buttons'); ?>
 				<p><?php bloginfo( 'description' ); ?></p>
 			</div>
 			<div class="contact-info col-xs-6 col-sm-4 col-md-3 col-lg-3">
@@ -94,6 +95,9 @@
 				<h3>
 					Quick Links
 				</h3>
+				<?php
+				$args = [ 'theme_location' => 'secondary' ];
+				wp_nav_menu( $args ); ?>
 			</div>
 			<div class="news-letter col-xs-8 col-sm-7 col-md-8 col-lg-3">
 				<h3>Newsletter</h3>

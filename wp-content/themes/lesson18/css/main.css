@@ -96,8 +96,13 @@ h3 {
 .h-page {
   position: relative; }
   .h-page h1 {
-    width: 200px;
+    display: inline-block;
     margin: 25px 0; }
+  .h-page .crafty-social-buttons {
+    float: right;
+    margin: 30px 50px 25px 0; }
+    .h-page .crafty-social-buttons img {
+      border-radius: 50%; }
   .h-page .hamburger, .h-page .cross {
     position: absolute;
     top: 50%;
@@ -260,9 +265,15 @@ h3 {
       font-weight: 400;
       text-transform: none;
       color: white;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      display: inline-block; }
       .m-page .our-contacts .our-describe .logotype a {
         color: white; }
+    .m-page .our-contacts .our-describe .crafty-social-buttons {
+      float: right;
+      margin: 30px 0 25px; }
+      .m-page .our-contacts .our-describe .crafty-social-buttons img {
+        border-radius: 50%; }
   .m-page .our-contacts .contact-info {
     padding: 60px 15px 60px 15px; }
     .m-page .our-contacts .contact-info .our-mail, .m-page .our-contacts .contact-info .coordinates {
@@ -274,6 +285,21 @@ h3 {
       margin-top: 25px; }
   .m-page .our-contacts .quick-links {
     padding: 60px 15px 60px 15px; }
+    .m-page .our-contacts .quick-links #menu-quicklinks {
+      display: block !important; }
+      .m-page .our-contacts .quick-links #menu-quicklinks li a {
+        color: #9b9999;
+        line-height: 24px; }
+        .m-page .our-contacts .quick-links #menu-quicklinks li a:hover {
+          color: #87b672; }
+          .m-page .our-contacts .quick-links #menu-quicklinks li a:hover:before {
+            color: #87b672; }
+      .m-page .our-contacts .quick-links #menu-quicklinks li:before {
+        content: '\f054';
+        font-family: FontAwesome,sans-serif;
+        font-size: 0.5625rem;
+        padding-right: 10px;
+        vertical-align: middle; }
   .m-page .our-contacts .news-letter {
     padding: 60px 10px 60px 15px; }
     .m-page .our-contacts .news-letter input {
@@ -308,8 +334,9 @@ h3 {
 
 @media screen and (min-width: 992px) {
   .h-page h1 {
-    margin: 40px 0;
-    width: 20%; }
+    margin: 40px 0; }
+  .h-page .crafty-social-buttons {
+    margin: 40px 0; }
   .h-page .hamburger {
     display: none !important; }
   .h-page .menu-menu-container {
