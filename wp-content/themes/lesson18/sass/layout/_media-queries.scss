@@ -1,0 +1,136 @@
+@import '../utils/_variables';
+
+@media screen and (min-width: $min-width) and (max-width: $sm-width - 1) {
+  .main-section {
+    .preview-work {
+      &:nth-child(even) {
+        clear: both;
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: $xs-width) and (max-width: $sm-width - 1) {
+  .m-page {
+    .top-title {
+      h2 {
+        font-size: (36/16)*1rem;
+      }
+    }
+    .page-desc-title {
+      p {
+        padding: 10px 50px;
+      }
+    }
+    .get-account {
+      p {
+        padding: 0 50px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $sm-width) and (max-width: $md-width - 1) {
+  .m-page {
+    .page-desc-title {
+      p {
+        padding: 10px 80px;
+      }
+    }
+    .main-section {
+      .preview-work {
+        &:nth-child(2n+1) {
+          clear: both;
+        }
+      }
+    }
+    .get-account {
+      p {
+        padding: 0 80px;
+      }
+    }
+    .our-contacts {
+      .quick-links {
+        clear: both;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $md-width) {
+  .h-page {
+    h1 {
+      margin: 40px 0;
+      width: 20%;
+    }
+    .hamburger {
+      display: none !important;
+    }
+    .menu-menu-container {
+      position: static;
+      background: transparent;
+      ul {
+        display: block !important;
+        border-top: 1px solid #ccc;
+        &:before,
+        &:after {
+          content: '';
+          display: table;
+        }
+        &:after {
+          clear: both;
+        }
+        li {
+          float: left;
+          border-bottom: none;
+          a {
+            padding: 30px 20px;
+          }
+          &:first-of-type {
+            a {
+              padding: 30px 20px 30px 0;
+            }
+          }
+          &:hover {
+            background-color: transparent;
+          }
+          a {
+            &:hover {
+            }
+          }
+        }
+      }
+    }
+  }
+  .m-page {
+    .top-title {
+      h2 {
+        text-align: left;
+      }
+    }
+    .page-desc-title {
+      p {
+        padding: 10px 170px;
+      }
+    }
+    .main-section {
+      .preview-work {
+        &:nth-child(3n+1) {
+          clear: both;
+        }
+      }
+    }
+    .get-account {
+      p {
+        padding: 0 170px;
+      }
+    }
+    .our-contacts {
+      .quick-links, .contact-info, .our-describe {
+        padding: 60px 65px 60px 15px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,16 @@
+.f-page {
+  background-color: #333;
+  color: $footer-font-color;
+  padding: 25px 0 15px;
+  border-top: 1px solid grey;
+  text-transform: uppercase;
+  font-family: Novecentowide,sans-serif;
+  font-size: (12/16)*1rem;
+  font-weight: 600;
+  .copyright {
+    span {
+      color: #cbcbcb;
+    }
+  }
+
+}
