@@ -15,6 +15,22 @@
                 $(".hamburger").show();
             });
         });
+
+
+        $(".fa-search").toggle(function () {
+                // Отображаем скрытый блок
+
+                $("#search").animate({
+                    width: "toggle"
+                });
+            },
+            function () {
+                // Скрываем блок
+                $("#search").animate({
+                    width: "toggle"
+                });// fadeOut - плавное исчезновение
+            }); // end of toggle()
+
     });
 })(jQuery);
 

@@ -1,15 +1,12 @@
 .h-page {
   position: relative;
+  menu {
+    padding-left: 0;
+    margin: 0;
+  }
   h1 {
     display: inline-block;
     margin: 25px 0;
-  }
-  .crafty-social-buttons {
-    float: right;
-    margin: 30px 50px 25px 0;
-    img {
-      border-radius: 50%;
-    }
   }
   .hamburger, .cross {
     position:absolute;
@@ -63,6 +60,21 @@
         &:hover{
           color: $link_hover-color;
         }
+      }
+    }
+  }
+  form {
+    float: right;
+    padding: 25px 0;
+    label {
+      vertical-align: sub;
+      input {
+        display: none;
+        border: 1px solid wheat;
+        outline: none;
+        background-color: whitesmoke;
+        padding: 5px 10px;
+        font-size: (14/16)*1rem;
       }
     }
   }

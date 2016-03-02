@@ -69,12 +69,16 @@
     .hamburger {
       display: none !important;
     }
+    menu {
+      border-top: 1px solid #ccc;
+    }
     .menu-menu-container {
       position: static;
       background: transparent;
+      width: 80%;
+      float: left;
       ul {
         display: block !important;
-        border-top: 1px solid #ccc;
         &:before,
         &:after {
           content: '';
@@ -104,6 +108,11 @@
         }
       }
     }
+    form {
+      width: 20%;
+      text-align: right;
+
+    }
   }
   .m-page {
     .top-title {
@@ -131,6 +140,28 @@
     .our-contacts {
       .quick-links, .contact-info, .our-describe {
         padding: 60px 65px 60px 15px;
+      }
+    }
+  }
+  .f-page {
+    .copyright {
+      text-align: left;
+      font-size: (12/16)*1rem;
+      display: inline-block;
+    }
+    .menu-footer-menu-container {
+      float: right;
+      #menu-footer-menu {
+        li {
+          text-align: left;
+          display: inline-block;
+          padding-left: 5px;
+          letter-spacing: normal;
+          &:not(:last-child) a:after {
+            content: '/';
+            padding-left: 5px;
+          }
+        }
       }
     }
   }

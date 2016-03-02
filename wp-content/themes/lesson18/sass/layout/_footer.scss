@@ -8,8 +8,16 @@
   font-size: (12/16)*1rem;
   font-weight: 600;
   .copyright {
+    text-align: center;
+    font-size: (10/16)*1rem;
     span {
       color: #cbcbcb;
+    }
+  }
+  #menu-footer-menu {
+    display: block !important;
+    li {
+      text-align: center;
     }
   }
 

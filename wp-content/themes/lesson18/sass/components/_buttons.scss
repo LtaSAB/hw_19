@@ -1,10 +1,11 @@
 @import '../utils/_variables';
+
 .button {
   display: inline-block;
   background-color: #87b672;
   padding: 15px 20px;
   color: white;
-  font-family: Novecentowide,sans-serif;
+  font-family: Novecentowide, sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   font-size: (14/16)*1rem;
@@ -12,6 +13,7 @@
     color: #00A8EF;
   }
 }
+
 button[type="submit"] {
   display: inline-block;
   text-transform: uppercase;
@@ -20,4 +22,41 @@ button[type="submit"] {
   border: none;
   color: white;
   margin-left: 5px;
+}
+
+.social-icons {
+  float: right;
+  margin: 45px 50px 25px 0;
+  li {
+    display: inline-block;
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+    a {
+      display: block;
+      border-radius: 50%;
+      background-color: #dfdfdf;
+      width: 34px;
+      height: 34px;
+      position: relative;
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:hover {
+        &:before {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.our-describe {
+  .social-icons {
+    float: right;
+    margin: 30px 0 25px;
+  }
 }

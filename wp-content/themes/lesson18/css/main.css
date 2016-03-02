@@ -93,16 +93,17 @@ h3 {
 .title-centered {
   text-align: center; }
 
+label {
+  margin: 0; }
+
 .h-page {
   position: relative; }
+  .h-page menu {
+    padding-left: 0;
+    margin: 0; }
   .h-page h1 {
     display: inline-block;
     margin: 25px 0; }
-  .h-page .crafty-social-buttons {
-    float: right;
-    margin: 30px 50px 25px 0; }
-    .h-page .crafty-social-buttons img {
-      border-radius: 50%; }
   .h-page .hamburger, .h-page .cross {
     position: absolute;
     top: 50%;
@@ -146,6 +147,18 @@ h3 {
         text-transform: uppercase; }
         .h-page .menu-menu-container li a:hover {
           color: #87b672; }
+  .h-page form {
+    float: right;
+    padding: 25px 0; }
+    .h-page form label {
+      vertical-align: sub; }
+      .h-page form label input {
+        display: none;
+        border: 1px solid wheat;
+        outline: none;
+        background-color: whitesmoke;
+        padding: 5px 10px;
+        font-size: 0.875rem; }
 
 .f-page {
   background-color: #333;
@@ -156,8 +169,15 @@ h3 {
   font-family: Novecentowide,sans-serif;
   font-size: 0.75rem;
   font-weight: 600; }
-  .f-page .copyright span {
-    color: #cbcbcb; }
+  .f-page .copyright {
+    text-align: center;
+    font-size: 0.625rem; }
+    .f-page .copyright span {
+      color: #cbcbcb; }
+  .f-page #menu-footer-menu {
+    display: block !important; }
+    .f-page #menu-footer-menu li {
+      text-align: center; }
 
 .m-page .top-title {
   background: url("../img/top-title-bg.jpg") no-repeat center;
@@ -258,7 +278,7 @@ h3 {
     color: white;
     margin: 0 0 25px; }
   .m-page .our-contacts .our-describe {
-    padding: 60px 65px 60px 15px; }
+    padding: 60px 15px 60px 15px; }
     .m-page .our-contacts .our-describe .logotype {
       font-family: Pacifico, cursive;
       font-size: 2.625rem;
@@ -269,11 +289,6 @@ h3 {
       display: inline-block; }
       .m-page .our-contacts .our-describe .logotype a {
         color: white; }
-    .m-page .our-contacts .our-describe .crafty-social-buttons {
-      float: right;
-      margin: 30px 0 25px; }
-      .m-page .our-contacts .our-describe .crafty-social-buttons img {
-        border-radius: 50%; }
   .m-page .our-contacts .contact-info {
     padding: 60px 15px 60px 15px; }
     .m-page .our-contacts .contact-info .our-mail, .m-page .our-contacts .contact-info .coordinates {
@@ -339,12 +354,15 @@ h3 {
     margin: 40px 0; }
   .h-page .hamburger {
     display: none !important; }
+  .h-page menu {
+    border-top: 1px solid #ccc; }
   .h-page .menu-menu-container {
     position: static;
-    background: transparent; }
+    background: transparent;
+    width: 80%;
+    float: left; }
     .h-page .menu-menu-container ul {
-      display: block !important;
-      border-top: 1px solid #ccc; }
+      display: block !important; }
       .h-page .menu-menu-container ul:before, .h-page .menu-menu-container ul:after {
         content: '';
         display: table; }
@@ -359,6 +377,9 @@ h3 {
           padding: 30px 20px 30px 0; }
         .h-page .menu-menu-container ul li:hover {
           background-color: transparent; }
+  .h-page form {
+    width: 20%;
+    text-align: right; }
   .m-page .top-title h2 {
     text-align: left; }
   .m-page .page-desc-title p {
@@ -368,14 +389,28 @@ h3 {
   .m-page .get-account p {
     padding: 0 170px; }
   .m-page .our-contacts .quick-links, .m-page .our-contacts .contact-info, .m-page .our-contacts .our-describe {
-    padding: 60px 65px 60px 15px; } }
+    padding: 60px 65px 60px 15px; }
+  .f-page .copyright {
+    text-align: left;
+    font-size: 0.75rem;
+    display: inline-block; }
+  .f-page .menu-footer-menu-container {
+    float: right; }
+    .f-page .menu-footer-menu-container #menu-footer-menu li {
+      text-align: left;
+      display: inline-block;
+      padding-left: 5px;
+      letter-spacing: normal; }
+      .f-page .menu-footer-menu-container #menu-footer-menu li:not(:last-child) a:after {
+        content: '/';
+        padding-left: 5px; } }
 
 .button {
   display: inline-block;
   background-color: #87b672;
   padding: 15px 20px;
   color: white;
-  font-family: Novecentowide,sans-serif;
+  font-family: Novecentowide, sans-serif;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.875rem; }
@@ -390,3 +425,29 @@ button[type="submit"] {
   border: none;
   color: white;
   margin-left: 5px; }
+
+.social-icons {
+  float: right;
+  margin: 45px 50px 25px 0; }
+  .social-icons li {
+    display: inline-block; }
+    .social-icons li:not(:first-child) {
+      margin-left: 10px; }
+    .social-icons li a {
+      display: block;
+      border-radius: 50%;
+      background-color: #dfdfdf;
+      width: 34px;
+      height: 34px;
+      position: relative; }
+      .social-icons li a:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+      .social-icons li a:hover:before {
+        color: white; }
+
+.our-describe .social-icons {
+  float: right;
+  margin: 30px 0 25px; }

@@ -4,6 +4,9 @@
 		<p class="copyright"> copyright <?php echo date( 'Y' ); ?>
 			<span><?php bloginfo( 'name' ) ?></span>. All Rights Reserved
 		</p>
+		<?php
+		$args = [ 'theme_location' => 'footer' ];
+		wp_nav_menu( $args ); ?>
 	</div>
 </footer>
 </div>
